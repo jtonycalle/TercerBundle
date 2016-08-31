@@ -23,7 +23,7 @@ class Encriptacion{
     		$decrypted = mdecrypt_generic($td, $encrypted_data_bin);
     		mcrypt_generic_deinit($td);
     		mcrypt_module_close($td);
-    		return $decrypted;
+    		echo($decrypted);
 	}
 	
 }
