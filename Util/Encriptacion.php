@@ -10,7 +10,7 @@ class Encriptacion{
     		mcrypt_generic_deinit($td);
     		mcrypt_module_close($td);
     		$encrypted_data_hex = bin2hex($iv).bin2hex($encrypted_data_bin);
-    		return $encrypted_data_hex;
+    		echo($encrypted_data_hex);
 	}
  
 	public function desencriptar_AES($encrypted_data_hex, $key)
@@ -23,7 +23,7 @@ class Encriptacion{
     		$decrypted = mdecrypt_generic($td, $encrypted_data_bin);
     		mcrypt_generic_deinit($td);
     		mcrypt_module_close($td);
-    		return $decrypted;
+    		echo($decrypted);
 	}
 	
 }
