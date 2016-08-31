@@ -1,5 +1,5 @@
 <?php
-namespace tony\TercerBundle\Util;
+namespace Tony\TercerBundle\Util;
 class Encriptacion{
     	public function encriptar_AES($string, $key)
 	{
